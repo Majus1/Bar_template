@@ -1,1 +1,55 @@
+// Coolor override
+$primary: #183C28;
+$secondary: #DEB64E;
+// Coolor override
+
+// Button styling override
+$btn-border-radius: 0px;
+$btn-padding-x: 4.875em;
+$btn-padding-y: 1em;
+// Button styling override
+
+// Import
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+// Import
+
+// Global font overide
+* {
+    font-family: 'Poppins', sans-serif;
+}
+// Global font overide
+
+// Display font override
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+    font-family: 'Italiana', serif;
+}
+// Display font override
+
+#hero_wrapper {
+    background:
+    linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
+    linear-gradient(to top, rgba(24, 60, 40, 1), rgba(24, 60, 40, 0)),
+    url("../assets/foto/template-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+#hero {
+    .type-block {
+        .display-1 {
+            font-size: 5rem;
+        }
+        h2 {
+            font-weight: 400;
+        }
+    }
+}
+
+
