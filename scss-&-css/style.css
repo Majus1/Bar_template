@@ -11999,6 +11999,18 @@ fieldset:disabled .btn {
   background-color: #183C28;
 }
 
+#about-us_wrapper {
+  background-color: #183C28;
+}
+
+#about-us .type-block {
+  text-transform: uppercase;
+}
+
+#about-us .type-block #long-arrow {
+  fill: #DEB64E;
+}
+
 .bounce {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
@@ -12039,6 +12051,49 @@ fieldset:disabled .btn {
   60% {
     -webkit-transform: translateY(-15px);
             transform: translateY(-15px);
+  }
+}
+
+.side-bounce {
+  -webkit-animation: side-bounce 2s infinite;
+  animation: side-bounce 2s infinite;
+}
+
+@-webkit-keyframes side-bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+}
+
+@keyframes side-bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -76,16 +76,27 @@ $btn-padding-y: 1em;
 #menu_wrapper {
     background-color: $primary;
 }
-
 // ::::: MENU SECTION :::::
 
 
 // ::::: AVOUT US SECTION :::::
+#about-us_wrapper {
+    background-color: $primary;
+}
 
+#about-us {
+    .type-block {
+        text-transform: uppercase;
+        #long-arrow {
+            fill: $secondary;
+        }
+    }
+}
 // ::::: AVOUT US SECTION :::::
 
 
 // ::::: ANIMATIONS :::::
+// Bounce
 .bounce {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
@@ -110,4 +121,32 @@ $btn-padding-y: 1em;
         transform: translateY(-15px);
     }
 }
+// Bounce
+
+// Side bounce
+.side-bounce {
+    -moz-animation: side-bounce 2s infinite;
+    -webkit-animation: side-bounce 2s infinite;
+    animation: side-bounce 2s infinite;
+}
+
+@keyframes side-bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(0);
+    }
+
+    40% {
+        transform: translateX(-20px);
+    }
+
+    60% {
+        transform: translateX(-15px);
+    }
+}
+// Side bounce
 // ::::: ANIMATIONS :::::
