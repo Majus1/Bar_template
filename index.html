@@ -88,6 +88,64 @@
     </section>
     <!-- ::::: About us ::::: -->
 
+    <!-- ::::: Table reservation ::::: -->
+    <section id="table-reservation_wrapper" class="d-flex flex-column  container-fluid">
+        <div id="table-reservation" class="container-lg d-flex flex-column my-5 py-5">
+            <div class="type-block text-white text-center">
+                <h1 class="pb-4">TABLE
+                    RESERVATION</h1>
+            </div>
+            <form class="text-center" action="POST">
+
+                <!-- ::: Number of people ::: -->
+                <div class="form-floating  mb-3">
+                    <select class="form-select" id="numberOfPeople" aria-label="Floating label select example">
+                        <option selected>Select number of people</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                    </select>
+                    <label for="numberOfPeople">Number of people</label>
+                </div>
+                <!-- ::: Number of people ::: -->
+
+                <!-- ::: Time of reservation ::: -->
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="timeOfReservation" aria-label="Floating label select example">
+                        <option selected>Select time of reservation</option>
+                        <option value="1">08:00</option>
+                        <option value="2">09:00</option>
+                        <option value="3">10:00</option>
+                        <option value="4">11:00</option>
+                        <option value="5">12:00</option>
+                        <option value="6">13:00</option>
+                        <option value="7">14:00</option>
+                        <option value="8">15:00</option>
+                        <option value="9">16:00</option>
+                        <option value="10">17:00</option>
+                        <option value="11">18:00</option>
+                        <option value="12">19:00</option>
+                        <option value="13">20:00</option>
+                        <option value="14">21:00</option>
+                    </select>
+                    <label for="timeOfReservation">Time of reservation</label>
+                </div>
+                <!-- ::: Time of reservation ::: -->
+
+                <!-- ::: Reservation holder ::: -->
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Name and surname</label>
+                </div>
+                <!-- ::: Reservation holder ::: -->
+
+                <button type="button" class="w-100 btn btn-secondary text-white  mb-3">PLACE RESERVATION</button>
+            </form>
+        </div>
+    </section>
+    <!-- ::::: Table reservation ::::: -->
+
 
 
 

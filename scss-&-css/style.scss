@@ -1,6 +1,8 @@
 // Coolor override
 $primary: #183C28;
 $secondary: #DEB64E;
+$secondary-200: #F7CA57;
+$secondary-300: #FCC843;
 // Coolor override
 
 
@@ -10,6 +12,13 @@ $btn-padding-x: 4.875em;
 $btn-padding-y: 1em;
 // Button styling override
 
+// Input styling ovverride
+$input-border-radius: 0px;
+$input-border-color: $secondary;
+$input-border-width: 2px;
+$form-select-indicator: url("data:image/svg+xml,<svg width='16' height='16' viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'><path fill='#DEB64E' d='M2 5H14L8 11L2 5Z'/></svg>");
+$input-focus-border-color: $secondary-300;
+// Input styling ovverride
 
 // Import
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -33,6 +42,7 @@ $btn-padding-y: 1em;
 .display-6 {
     font-family: 'Italiana', serif;
 }
+
 // Display font override
 
 
@@ -69,6 +79,7 @@ $btn-padding-y: 1em;
         transition: all 1s ease;
     }
 }
+
 // ::::: HERO SECTION :::::
 
 
@@ -76,6 +87,7 @@ $btn-padding-y: 1em;
 #menu_wrapper {
     background-color: $primary;
 }
+
 // ::::: MENU SECTION :::::
 
 
@@ -87,13 +99,22 @@ $btn-padding-y: 1em;
 #about-us {
     .type-block {
         text-transform: uppercase;
+
         #long-arrow {
             fill: $secondary;
         }
     }
 }
+
 // ::::: AVOUT US SECTION :::::
 
+
+// ::::: TABLE RESERVATIOM SECTION :::::
+#table-reservation_wrapper {
+    background-color: $primary;
+}
+
+// ::::: TABLE RESERVATIOM SECTION :::::
 
 // ::::: ANIMATIONS :::::
 // Bounce
@@ -121,6 +142,7 @@ $btn-padding-y: 1em;
         transform: translateY(-15px);
     }
 }
+
 // Bounce
 
 // Side bounce
@@ -148,5 +170,6 @@ $btn-padding-y: 1em;
         transform: translateX(-15px);
     }
 }
+
 // Side bounce
 // ::::: ANIMATIONS :::::
