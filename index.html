@@ -18,26 +18,53 @@
     <!-- ::::: Poppins font ::::: -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
 </head>
 
 <body>
 
-    <section id="hero_wrapper" class="d-flex justify-content-center align-items-center">
+    <!-- ::::: Hero section ::::: -->
+    <section id="hero_wrapper" class="container-fluid  d-flex  justify-content-center align-items-center">
         <div id="hero" class="d-flex flex-column align-items-center">
             <div class="type-block text-center text-white  mb-3">
                 <h1 class="display-1 m-0">BOTANIST</h1>
                 <h2 class="h1">Caffe and Bistro</h2>
             </div>
-            <div class="button-block d-flex flex-column">
-                <button type="button" class="btn btn-secondary text-white  mb-3">Primary</button>
-                <button type="button" class="btn btn-primary  mb-3">Primary</button>
+            <div class="d-flex flex-column">
+                <button type="button" class="btn btn-secondary text-white  mb-3">MENU</button>
+                <button type="button" class="btn btn-primary  mb-3">RESERVATION</button>
             </div>
-            <img src="./node_modules/bootstrap-icons/icons/arrow-down-short.svg" alt="down scroll icon">
+            <svg id="down-arrow" class="bounce" xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+            </svg>
         </div>
     </section>
+    <!-- ::::: Hero section ::::: -->
+
+    <!-- ::::: Menu section ::::: -->
+    <section id="menu_wrapper" class="d-flex flex-column  container-fluid">
+        <div id="menu" class=" container-lg d-flex flex-column  align-items-center  py-5 my-5">
+            <div class="type-block text-white">
+                <h1 class="pb-4">MENU</h1>
+            </div>
+            <div class="card bg-dark text-white">
+                <img src="./assets/foto/image-placeholder_2.png" class="card-img  rounded-0" alt="...">
+                <div class="card-img-overlay  d-flex flex-column justify-content-center align-items-center">
+                    <button type="button" class="btn btn-secondary text-white  mb-3">VIEW MENU</button>
+                </div>
+            </div>
+            <hr class="m-4 text-white w-100 opacity-100">
+        </div>
+    </section>
+    <!-- ::::: Menu section ::::: -->
+
+
+
 
     <!-- ::::: Scripts ::::: -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>

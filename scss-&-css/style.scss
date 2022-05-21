@@ -17,6 +17,7 @@ $btn-padding-y: 1em;
 * {
     font-family: 'Poppins', sans-serif;
 }
+
 // Global font overide
 
 // Display font override
@@ -28,28 +29,69 @@ $btn-padding-y: 1em;
 .display-6 {
     font-family: 'Italiana', serif;
 }
+
 // Display font override
 
 #hero_wrapper {
     background:
-    linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
-    linear-gradient(to top, rgba(24, 60, 40, 1), rgba(24, 60, 40, 0)),
-    url("../assets/foto/template-background.jpg");
+        linear-gradient(to top, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),
+        linear-gradient(to top, rgba(24, 60, 40, 1), rgba(24, 60, 40, 0)),
+        url("../assets/foto/template-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
 }
 
+// ::::: HERO SECTION :::::
 #hero {
     .type-block {
         .display-1 {
             font-size: 5rem;
         }
+
         h2 {
             font-weight: 400;
         }
     }
+
+    #down-arrow {
+        position: relative;
+        top: 150px;
+        fill: $secondary;
+
+        // Animation
+        transition: all 1s ease;
+    }
 }
 
+// ::::: HERO SECTION :::::
 
+// ::::: MENU SECTION :::::
+#menu_wrapper {
+    background-color: $primary;
+}
+#menu {
+    
+}
+// ::::: MENU SECTION :::::
+
+// ::::: ANIMATIONS :::::
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+// ::::: ANIMATIONS :::::
