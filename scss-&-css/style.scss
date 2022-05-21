@@ -3,15 +3,18 @@ $primary: #183C28;
 $secondary: #DEB64E;
 // Coolor override
 
+
 // Button styling override
 $btn-border-radius: 0px;
 $btn-padding-x: 4.875em;
 $btn-padding-y: 1em;
 // Button styling override
 
+
 // Import
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 // Import
+
 
 // Global font overide
 * {
@@ -19,6 +22,7 @@ $btn-padding-y: 1em;
 }
 
 // Global font overide
+
 
 // Display font override
 .display-1,
@@ -29,9 +33,11 @@ $btn-padding-y: 1em;
 .display-6 {
     font-family: 'Italiana', serif;
 }
-
 // Display font override
 
+
+
+// ::::: HERO SECTION :::::
 #hero_wrapper {
     background:
         linear-gradient(to top, rgba(24, 60, 40, 1), rgba(24, 60, 40, .25)),
@@ -43,7 +49,6 @@ $btn-padding-y: 1em;
     height: 100vh;
 }
 
-// ::::: HERO SECTION :::::
 #hero {
     .type-block {
         .display-1 {
@@ -64,17 +69,21 @@ $btn-padding-y: 1em;
         transition: all 1s ease;
     }
 }
-
 // ::::: HERO SECTION :::::
+
 
 // ::::: MENU SECTION :::::
 #menu_wrapper {
     background-color: $primary;
 }
 
-#menu {}
-
 // ::::: MENU SECTION :::::
+
+
+// ::::: AVOUT US SECTION :::::
+
+// ::::: AVOUT US SECTION :::::
+
 
 // ::::: ANIMATIONS :::::
 .bounce {
@@ -101,5 +110,4 @@ $btn-padding-y: 1em;
         transform: translateY(-15px);
     }
 }
-
 // ::::: ANIMATIONS :::::
