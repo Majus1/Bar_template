@@ -12015,6 +12015,20 @@ fieldset:disabled .btn {
   background-color: #183C28;
 }
 
+#footer_wrapper {
+  background-color: #0F271A;
+}
+
+footer .left-footer-image {
+  position: absolute;
+  left: 0;
+}
+
+footer .right-footer-image {
+  position: absolute;
+  right: 0;
+}
+
 .bounce {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;

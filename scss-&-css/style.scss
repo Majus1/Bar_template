@@ -1,6 +1,7 @@
 // Coolor override
 $primary: #183C28;
 $secondary: #DEB64E;
+$tertiary: #0F271A;
 $secondary-200: #F7CA57;
 $secondary-300: #FCC843;
 // Coolor override
@@ -87,7 +88,6 @@ $input-focus-border-color: $secondary-300;
 #menu_wrapper {
     background-color: $primary;
 }
-
 // ::::: MENU SECTION :::::
 
 
@@ -105,7 +105,6 @@ $input-focus-border-color: $secondary-300;
         }
     }
 }
-
 // ::::: AVOUT US SECTION :::::
 
 
@@ -115,6 +114,25 @@ $input-focus-border-color: $secondary-300;
 }
 
 // ::::: TABLE RESERVATIOM SECTION :::::
+
+
+// ::::: FOOTER :::::
+#footer_wrapper {
+    background-color: $tertiary;
+}
+footer {
+    .left-footer-image {
+        position: absolute;
+        left: 0;
+    }
+    .right-footer-image {
+        position: absolute;
+        right: 0;
+    }
+}
+// ::::: FOOTER :::::
+
+
 
 // ::::: ANIMATIONS :::::
 // Bounce
