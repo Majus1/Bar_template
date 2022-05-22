@@ -21,6 +21,18 @@ $form-select-indicator: url("data:image/svg+xml,<svg width='16' height='16' view
 $input-focus-border-color: $secondary-300;
 // Input styling ovverride
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  ::-webkit-scrollbar { display: none; }
+
 // Import
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 // Import
@@ -84,7 +96,7 @@ $input-focus-border-color: $secondary-300;
         display: none;
         position: absolute;
         left: 10vw;
-        top: 300px;
+        top: 20vh;
         @media (min-width: 992px) {
             display: flex;
         }
