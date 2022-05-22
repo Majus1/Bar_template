@@ -11999,6 +11999,7 @@ fieldset:disabled .btn {
   display: none;
   position: absolute;
   left: 10vw;
+  top: 300px;
 }
 
 @media (min-width: 992px) {
@@ -12037,12 +12038,12 @@ fieldset:disabled .btn {
   background-color: #183C28;
 }
 
-#about-us .type-block {
-  text-transform: uppercase;
-}
-
 #about-us .type-block #long-arrow {
   fill: #DEB64E;
+}
+
+#about-us #floating-pictogram_1_wrapper {
+  position: absolute;
 }
 
 #table-reservation_wrapper {

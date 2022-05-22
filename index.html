@@ -39,8 +39,8 @@
 
             <!-- ::: Button block ::: -->
             <div class="d-flex flex-column">
-                <button type="button" class="btn btn-secondary text-white  mb-3">MENU</button>
-                <button type="button" class="btn btn-primary  mb-3">RESERVATION</button>
+                <a href="#menu" type="button" class="btn btn-secondary text-white  mb-3">MENU</a>
+                <a href="#table-reservation" type="button" class="btn btn-primary  mb-3">RESERVATION</a>
             </div>
             <!-- ::: Button block ::: -->
 
@@ -55,11 +55,10 @@
             <!-- ::: Elegant side navigation ::: -->
             <div id="elegant-side-navigation" class=" flex-row align-items-center">
                 <nav class="d-flex flex-column  text-white  pe-5">
-                    <a href="/html/"><p class="text-end mb-4">ABOUT US</p></a>
                     <a href="#menu"><p class="text-end mb-4">MENU</p></a>
-                    <a href="/html/"><p class="text-end mb-4">RESERVATION</p></a>
-                    <a href="/html/"><p class="text-end mb-4">GALLERY</p></a>
-                    <a href="/html/"><p class="text-end mb-4">CONTACT</p></a>
+                    <a href="#about-us"><p class="text-end mb-4">ABOUT US</p></a>
+                    <a href="#table-reservation"><p class="text-end mb-4">RESERVATION</p></a>
+                    <a href="#footer_wrapper"><p class="text-end mb-4">CONTACT</p></a>
                 </nav>
                 <img src="./assets/vectors/vertical-line.svg" alt="">
             </div>
@@ -72,9 +71,14 @@
     <!-- ::::: Menu section ::::: -->
     <section id="menu_wrapper" class="d-flex flex-column  container-fluid">
         <div id="menu" class=" container-lg d-flex flex-column  align-items-center  py-5 my-5">
+
+            <!-- ::: Type block ::: -->
             <div class="type-block text-white">
                 <h1 class="pb-4">MENU</h1>
             </div>
+            <!-- ::: Type block ::: -->
+
+            <!-- ::: Menu block ::: -->
             <div class="card bg-dark text-white">
                 <img src="./assets/foto/image-placeholder_2.png" class="card-img  rounded-0" alt="...">
                 <div class="card-img-overlay  d-flex flex-column justify-content-center align-items-center">
@@ -82,14 +86,17 @@
                 </div>
             </div>
             <hr class="m-4 text-white w-100 opacity-100">
+            <!-- ::: Menu block ::: -->
         </div>
     </section>
     <!-- ::::: Menu section ::::: -->
 
     <!-- ::::: About us ::::: -->
     <section id="about-us_wrapper" class="d-flex flex-column  container-fluid">
-        <div id="about-us" class="container-lg d-flex flex-column  py-5 my-5">
-            <div class="type-block text-white  pb-5">
+        <div id="about-us" class="container-lg  d-flex flex-column flex-lg-row  justify-content-between align-items-center  py-5 my-5">
+           
+            <!-- ::: Type block ::: -->
+            <div class="type-block  col-lg-5  text-white  pb-5">
                 <h1 class="pb-4">ABOUT US</h1>
                 <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id facilisi potenti dignissim
                     ornare mi neque.</p>
@@ -104,9 +111,19 @@
                     </svg>
                 </a>
             </div>
-            <div class="image-block">
+            <!-- ::: Type block ::: -->
+
+            <!-- ::: Image block ::: -->
+            <div class="image-block  col-lg-6">
                 <img class="img-fluid" src="./assets/foto/image-placeholder_3.png" alt="...">
             </div>
+            <!-- ::: Image block ::: -->
+
+            <!-- ::: Floating pictogram ::: -->
+            <div id="floating-pictogram_1_wrapper">
+                <img src="./assets/vectors/floating-pictogram.svg" alt="Brand pictogram">
+            </div>
+            <!-- ::: Floating pictogram ::: -->
         </div>
     </section>
     <!-- ::::: About us ::::: -->
