@@ -11995,6 +11995,40 @@ fieldset:disabled .btn {
   transition: all 1s ease;
 }
 
+#hero #elegant-side-navigation {
+  display: none;
+  position: absolute;
+  left: 10vw;
+}
+
+@media (min-width: 992px) {
+  #hero #elegant-side-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1400px) {
+  #hero #elegant-side-navigation {
+    left: 20vw;
+  }
+}
+
+#hero #elegant-side-navigation p {
+  color: white;
+}
+
+#hero #elegant-side-navigation a {
+  text-decoration: none;
+}
+
+#hero #elegant-side-navigation a:hover p {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #DEB64E;
+}
+
 #menu_wrapper {
   background-color: #183C28;
 }

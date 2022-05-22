@@ -79,6 +79,30 @@ $input-focus-border-color: $secondary-300;
         // Animation
         transition: all 1s ease;
     }
+
+    #elegant-side-navigation {
+        display: none;
+        position: absolute;
+        left: 10vw;
+        @media (min-width: 992px) {
+            display: flex;
+        }
+        @media (min-width: 1400px) {
+            left: 20vw;
+        }
+        p {
+            color: white;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            p {
+                transition: 0.5s;
+                color: $secondary;
+            }
+        }
+    }
 }
 
 // ::::: HERO SECTION :::::
@@ -88,6 +112,7 @@ $input-focus-border-color: $secondary-300;
 #menu_wrapper {
     background-color: $primary;
 }
+
 // ::::: MENU SECTION :::::
 
 
@@ -105,6 +130,7 @@ $input-focus-border-color: $secondary-300;
         }
     }
 }
+
 // ::::: AVOUT US SECTION :::::
 
 
@@ -120,16 +146,19 @@ $input-focus-border-color: $secondary-300;
 #footer_wrapper {
     background-color: $tertiary;
 }
+
 footer {
     .left-footer-image {
         position: absolute;
         left: 0;
     }
+
     .right-footer-image {
         position: absolute;
         right: 0;
     }
 }
+
 // ::::: FOOTER :::::
 
 
