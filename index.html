@@ -135,10 +135,10 @@
                 <h1 class="pb-4">TABLE
                     RESERVATION</h1>
             </div>
-            <form class="text-center" action="POST">
+            <form class="d-flex flex-column flex-xxl-row  justify-content-between text-center" action="POST">
 
                 <!-- ::: Number of people ::: -->
-                <div class="form-floating  mb-3">
+                <div class="form-floating  col-12 col-xxl-3  mb-3">
                     <select class="form-select" id="numberOfPeople" aria-label="Floating label select example">
                         <option selected>Select number of people</option>
                         <option value="1">One</option>
@@ -151,7 +151,7 @@
                 <!-- ::: Number of people ::: -->
 
                 <!-- ::: Time of reservation ::: -->
-                <div class="form-floating mb-3">
+                <div class="form-floating col-12 col-xxl-3  mb-3">
                     <select class="form-select" id="timeOfReservation" aria-label="Floating label select example">
                         <option selected>Select time of reservation</option>
                         <option value="1">08:00</option>
@@ -174,13 +174,13 @@
                 <!-- ::: Time of reservation ::: -->
 
                 <!-- ::: Reservation holder ::: -->
-                <div class="form-floating mb-3">
+                <div class="form-floating col-12 col-xxl-2  mb-3">
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                     <label for="floatingTextarea">Name and surname</label>
                 </div>
                 <!-- ::: Reservation holder ::: -->
 
-                <button type="button" class="w-100 btn btn-secondary text-white  mb-3">PLACE RESERVATION</button>
+                <button type="button" class="col-12 col-xxl-3 btn btn-secondary text-white  mb-3">PLACE RESERVATION</button>
             </form>
         </div>
     </section>
