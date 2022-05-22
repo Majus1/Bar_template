@@ -12043,7 +12043,14 @@ fieldset:disabled .btn {
 }
 
 #about-us #floating-pictogram_1_wrapper {
+  display: none;
   position: absolute;
+}
+
+@media (min-width: 1024px) {
+  #about-us #floating-pictogram_1_wrapper {
+    display: inline;
+  }
 }
 
 #table-reservation_wrapper {

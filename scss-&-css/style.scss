@@ -131,7 +131,11 @@ $input-focus-border-color: $secondary-300;
         }
     }
     #floating-pictogram_1_wrapper {
+        display: none;
         position: absolute;
+        @media (min-width: 1024px) {
+            display: inline;
+        }
     }
 }
 
