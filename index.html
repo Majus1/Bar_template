@@ -26,63 +26,29 @@
 
 <body>
 
-    <!-- ::::: Header ::::: -->
-    <!-- <nav class="navbar navbar-expand-lg nav-scrolled" id="brand-header">
-        <div class="container-lg">
-            <div class="spacer d-lg-none"></div>
+    <nav id="brand-header" class="navbar navbar-expand-lg bg-p">
+        <div class="container-lg  px-4">
             <a class="navbar-brand" href="/index.html">
-                <img src="/assets/images/EVALLEY_logo_completed_black.svg" alt="">
+                <img src="./assets/vectors/brand-logo.svg" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-                onclick="disableScroll()">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4 23H26Z" fill="black" />
                     <path d="M4 7H26M4 15H26M4 23H26" stroke="white" stroke-width="2" stroke-miterlimit="10"
                         stroke-linecap="round" />
                 </svg>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link  px-3" href="/index.html"><strong>Domov</strong></a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link  text-black  px-3" href="/evalley-tecaj-racunovodja.html"><strong>Tečaj
-                                Evalley računovodja</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-black  px-3" href="/contact.html"><strong>Kontakt</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link  text-black  px-3" href="#"><strong>Spletna učilnica</strong></a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse  justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link  px-3" aria-current="page" href="#menu">MENU</a>
+                    <a class="nav-link  px-3" href="#about-us">ABOUT US</a>
+                    <a class="nav-link  px-3" href="#table-reservation">RESERVATION</a>
+                    <a class="nav-link  px-3" href="#table-reservation">CONTACT</a>
+                </div>
             </div>
         </div>
-    </nav> -->
-    <!-- ::::: Header ::::: -->
-
-    <nav class="navbar navbar-expand-lg bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 23H26Z" fill="black" />
-                <path d="M4 7H26M4 15H26M4 23H26" stroke="white" stroke-width="2" stroke-miterlimit="10"
-                    stroke-linecap="round" />
-            </svg>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled">Disabled</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+    </nav>
 
     <!-- ::::: Hero section ::::: -->
     <section id="hero_wrapper" class="container-fluid  d-flex  justify-content-center align-items-center">
@@ -113,10 +79,18 @@
             <!-- ::: Elegant side navigation ::: -->
             <div id="elegant-side-navigation" class=" flex-row align-items-center">
                 <nav class="d-flex flex-column  text-white  pe-5">
-                    <a href="#menu"><p class="text-end mb-4">MENU</p></a>
-                    <a href="#about-us"><p class="text-end mb-4">ABOUT US</p></a>
-                    <a href="#table-reservation"><p class="text-end mb-4">RESERVATION</p></a>
-                    <a href="#footer_wrapper"><p class="text-end mb-4">CONTACT</p></a>
+                    <a href="#menu">
+                        <p class="text-end mb-4">MENU</p>
+                    </a>
+                    <a href="#about-us">
+                        <p class="text-end mb-4">ABOUT US</p>
+                    </a>
+                    <a href="#table-reservation">
+                        <p class="text-end mb-4">RESERVATION</p>
+                    </a>
+                    <a href="#footer_wrapper">
+                        <p class="text-end mb-4">CONTACT</p>
+                    </a>
                 </nav>
                 <img src="./assets/vectors/vertical-line.svg" alt="">
             </div>
@@ -151,8 +125,9 @@
 
     <!-- ::::: About us ::::: -->
     <section id="about-us_wrapper" class="d-flex flex-column  container-fluid">
-        <div id="about-us" class="container-lg  d-flex flex-column flex-lg-row  justify-content-between align-items-center  py-5 my-5">
-           
+        <div id="about-us"
+            class="container-lg  d-flex flex-column flex-lg-row  justify-content-between align-items-center  py-5 my-5">
+
             <!-- ::: Type block ::: -->
             <div class="type-block  col-lg-5  text-white  pb-5">
                 <h1 class="pb-4">ABOUT US</h1>
@@ -238,7 +213,8 @@
                 </div>
                 <!-- ::: Reservation holder ::: -->
 
-                <button type="button" class="col-12 col-xxl-3 btn btn-secondary text-white  mb-3">PLACE RESERVATION</button>
+                <button type="button" class="col-12 col-xxl-3 btn btn-secondary text-white  mb-3">PLACE
+                    RESERVATION</button>
             </form>
         </div>
     </section>

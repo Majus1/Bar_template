@@ -24,14 +24,19 @@ $input-focus-border-color: $secondary-300;
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
     display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
-  ::-webkit-scrollbar { display: none !important; }
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+::-webkit-scrollbar {
+    display: none !important;
+}
 
 // Import
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -65,34 +70,53 @@ body::-webkit-scrollbar {
     top: 0;
     width: 100%;
     transition: all .3s ease;
-    // background: $primary;
     z-index: 100;
-    // .navbar-toggler {
-    //     border: none !important;
-    // }
+
+    a {
+        transition: 0.5s;
+        color: $secondary;
+    }
+
     strong {
         font-size: 0.875rem;
     }
+
     .nav-link {
-        color: white!important;
+        color: white !important;
     }
+
     strong:hover {
-        color: blue!important;
+        color: blue !important;
         transition: color .3s
     }
+
     strong:active {
-        color: $secondary!important;
+        color: $secondary !important;
     }
 }
 
 #brand-header.hide {
-    top: -56.516px;
+    top: -66.516px;
 }
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+// Change header styling on scroll
+.navbar {
+    background: none;
+}
+
+.navbar-scrolled {
+    background: $primary
+}
+// Change header styling on scroll
+
 // ::::: HEADER SECTION :::::
-
-
-
-
 
 
 // ::::: HERO SECTION :::::
@@ -132,18 +156,23 @@ body::-webkit-scrollbar {
         position: absolute;
         left: 10vw;
         top: 20vh;
+
         @media (min-width: 992px) {
             display: flex;
         }
+
         @media (min-width: 1400px) {
             left: 20vw;
         }
+
         p {
             color: white;
         }
+
         a {
             text-decoration: none;
         }
+
         a:hover {
             p {
                 transition: 0.5s;
@@ -152,6 +181,7 @@ body::-webkit-scrollbar {
         }
     }
 }
+
 // ::::: HERO SECTION :::::
 
 
@@ -176,9 +206,11 @@ body::-webkit-scrollbar {
             fill: $secondary;
         }
     }
+
     #floating-pictogram_1_wrapper {
         display: none;
         position: absolute;
+
         @media (min-width: 1024px) {
             display: inline;
         }

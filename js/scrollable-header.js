@@ -12,7 +12,7 @@ console.log("scrollable-header.js is linked");
 
     var curScroll = prevScroll = w.scrollY || doc.scrollTop;
     var curDirection = prevDirection = 0;
-    
+
     /*
     How it works:
     -------------
@@ -35,7 +35,7 @@ console.log("scrollable-header.js is linked");
 
 
 
-    var checkScroll = function() {
+    var checkScroll = function () {
         curScroll = w.scrollY || doc.scrollTop
         if (curScroll > prevScroll) {
             // Scroll down
@@ -52,12 +52,46 @@ console.log("scrollable-header.js is linked");
         prevScroll = curScroll
     };
 
-    var toggleHeader = function() {
+    var toggleHeader = function () {
         if (curDirection === 2) {
             header.classList.add("hide")
-        } else if ( curDirection === 1) {
+        } else if (curDirection === 1) {
             header.classList.remove("hide");
         }
     };
     window.addEventListener("scroll", checkScroll);
 })();
+
+
+// ::::: CHANGES COLOR OF HEADER ON SCROLL :::::
+
+// ::: VARIABLES :::
+const header = document.querySelector("#brand-header");
+const sectionOne = document.querySelector("#hero_wrapper"); // Element of screen trigers chamges
+const sectionOneOptions = {};
+// ::: VARIABLES :::
+
+const sectionOneObserver = new IntersectionObserver
+(function(
+    entries,
+    sectionOneObserver
+    ) {
+        entries.forEach(entry => {
+            if(!entry.isIntersecting) {
+                /*
+                • While entry is intersectiong we add the navbar-scrolled
+                • When navbar-scrolled is added the header has no background color
+                */
+                header.classList.add(`navbar-scrolled`);
+            } else {
+                /*
+                • While entry is not intersectiong we remove the navbar-scrolled
+                • When navbar-scrolled is removed the header has a background color
+                */
+                header.classList.remove(`navbar-scrolled`)
+            }
+        });
+}, sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
+// ::::: CHANGES COLOR OF HEADER ON SCROLL :::::
