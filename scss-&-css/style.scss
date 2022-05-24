@@ -30,8 +30,8 @@ body::-webkit-scrollbar {
   body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-  }
-  ::-webkit-scrollbar { display: none; }
+}
+  ::-webkit-scrollbar { display: none !important; }
 
 // Import
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
@@ -57,6 +57,41 @@ body::-webkit-scrollbar {
 }
 
 // Display font override
+
+
+// ::::: HEADER SECTION :::::
+#brand-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all .3s ease;
+    // background: $primary;
+    z-index: 100;
+    // .navbar-toggler {
+    //     border: none !important;
+    // }
+    strong {
+        font-size: 0.875rem;
+    }
+    .nav-link {
+        color: white!important;
+    }
+    strong:hover {
+        color: blue!important;
+        transition: color .3s
+    }
+    strong:active {
+        color: $secondary!important;
+    }
+}
+
+#brand-header.hide {
+    top: -56.516px;
+}
+// ::::: HEADER SECTION :::::
+
+
+
 
 
 
@@ -117,7 +152,6 @@ body::-webkit-scrollbar {
         }
     }
 }
-
 // ::::: HERO SECTION :::::
 
 
