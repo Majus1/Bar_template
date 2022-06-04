@@ -12036,8 +12036,22 @@ fieldset:disabled .btn {
   background: none;
 }
 
+@media (min-width: 992px) {
+  .navbar {
+    opacity: 0.0;
+    pointer-events: none;
+  }
+}
+
 .navbar-scrolled {
   background: #183C28;
+}
+
+@media (min-width: 992px) {
+  .navbar-scrolled {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 #hero_wrapper {

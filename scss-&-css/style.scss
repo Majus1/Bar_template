@@ -91,7 +91,7 @@ body {
     }
 
     strong:active {
-        color: $secondary !important;
+        color: $secondary  !important;
     }
 }
 
@@ -109,11 +109,21 @@ body {
 // Change header styling on scroll
 .navbar {
     background: none;
+    @media (min-width: 992px) {
+        opacity: 0.0;
+        pointer-events:none;
+    }
 }
 
 .navbar-scrolled {
-    background: $primary
+    background: $primary;
+    @media (min-width: 992px) {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
 }
+
 // Change header styling on scroll
 
 // ::::: HEADER SECTION :::::
